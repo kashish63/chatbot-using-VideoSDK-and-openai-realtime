@@ -1,34 +1,27 @@
 # AI Translator Agent using VideoSDK and OpenAI Realtime API
 
-This project integrates VideoSDK, OpenAI Realtime APIs to create an AI Translator Agent. Below are the setup instructions.
+This project integrates VideoSDK, OpenAI Realtime APIs to create voice assistant. Below are the setup instructions.
 
 ### Start with the project
 
 ```sh
-git clone https://github.com/videosdk-community/videosdk-openai-realtime-translator.git
+https://github.com/kashish63/chatbot-using-VideoSDK-and-openai-realtime.git
 ```
 
 ```sh
-cd videosdk-openai-realtime-translator
+cd chatbot-using-VideoSDK-and-openai-realtime
 ```
 
 ### Client Setup
 
-1. Navigate to `client` dir:
-   ```sh
-   cd client
-   ```
-2. Make a copy of the environment configuration file:
+
+   
+1. Create a `config.js` file in the `jsclient` folder videoSDK token for creating and joining meeting with:
 
    ```sh
-   cp .env.example .env
+   TOKEN = your_videosdk_auth_token_here
    ```
 
-3. Create a `.env` file in the `client` folder with:
-
-   ```env
-   VITE_APP_VIDEOSDK_TOKEN=your_videosdk_auth_token_here
-   ```
 
 Obtain your VideoSDK Auth Token from [app.videosdk.live](https://app.videosdk.live)
 
@@ -50,10 +43,6 @@ pip install -r requirements.txt
 
 Create Server Environment File (in project root):
 
-```sh
-cp .env.example .env
-```
-
 Add these keys to your `.env` file:
 
 ```sh
@@ -72,14 +61,12 @@ OPENAI_API_KEY=your_openai_key_here
 Start the Server (From Project Root):
 
 ```sh
-uvicorn app:app
+uvicorn main:app
 ```
 
-Start the Client (From `/client` Folder):
+Start the Client (From `/jsclient` Folder):
 
-```sh
-npm run dev
-```
+in jsclient folder click on index.html
 
 ---
 
