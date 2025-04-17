@@ -1,4 +1,4 @@
-# AI Translator Agent using VideoSDK and OpenAI Realtime API
+# Voice Chatbot using VideoSDK and OpenAI Realtime API
 
 This project integrates VideoSDK, OpenAI Realtime APIs to create voice assistant. Below are the setup instructions.
 
@@ -66,7 +66,9 @@ uvicorn main:app
 
 Start the Client (From `/jsclient` Folder):
 
-in jsclient folder click on index.html
+1. in jsclient folder click on index.html
+2. then create a new meeting or join a meeting
+3. after that AI assistance will join the meeting and conversation will start
 
 ---
 
